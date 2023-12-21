@@ -1,66 +1,99 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## 01_Struktur/Hirarki Folder
+project-website-sistem-pendaftaran-beasiswa/
+|-- app/
+|-- bootstrap/
+|-- config/
+|-- database/
+|-- public/
+|   |-- assets/
+|       |-- css/
+|       |   |-- style.css
+|       |-- images/
+|       |-- js/
+|           |-- main.js
+|-- resources/
+|   |-- views/
+|       |-- home.blade.php
+|       |-- daftar.blade.php
+|       |-- hasil.blade.php
+|-- routes/
+|-- .env
+|-- .gitignore
+|-- artisan
+|-- composer.json
+|-- database.sqlite
+|-- readme.md
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 02_keterangan
+* app/, bootstrap/, config/, database/: Struktur inti dari aplikasi Laravel.
+* public/assets/: Folder ini berisi semua aset yang diperlukan untuk website, seperti stylesheet, gambar, dan script JavaScript.
+    - css/: Menyimpan file-file stylesheet, termasuk file style.css yang digunakan untuk styling website.
+    - images/: Tempat untuk menyimpan semua gambar yang digunakan pada halaman website.
+    - js/: Berisi file JavaScript, termasuk main.js yang digunakan untuk interaktivitas pada website.
+* resources/views/: Folder ini berisi file-file blade yang digunakan untuk menghasilkan tampilan HTML pada website.
+    - home.blade.php: File blade untuk halaman utama (home) yang berisi informasi singkat tentang sistem pendaftaran beasiswa.
+    - daftar.blade.php: File blade untuk halaman pendaftaran beasiswa, tempat peserta mengisi formulir pendaftaran.
+    - hasil.blade.php: File blade untuk halaman yang menampilkan daftar peserta beasiswa yang belum diverifikasi.
+* routes/: Folder ini berisi file-file yang mendefinisikan rute atau URL pada aplikasi Laravel.
+* .env: Berkas konfigurasi untuk pengaturan lingkungan aplikasi Laravel.
+* .gitignore: Berkas ini digunakan untuk mengabaikan file atau folder tertentu saat proses version control menggunakan Git.
+* artisan: Alat baris perintah untuk menjalankan tugas-tugas yang berhubungan dengan proyek Laravel.
+* composer.json: Berkas konfigurasi untuk Composer, alat manajemen paket PHP yang digunakan dalam Laravel.
+* database.sqlite: Database SQLite untuk menyimpan data pendaftaran beasiswa.
 
-## About Laravel
+## 03_Sumber Daya Pemrograman
+* Laravel Framework: Framework PHP yang digunakan untuk membangun aplikasi web modern dan efisien.
+* Blade Template Engine: Mesin template bawaan Laravel untuk membuat tampilan HTML.
+* Eloquent ORM: Sistem manajemen basis data yang memungkinkan interaksi dengan database menggunakan bahasa PHP.
+* Composer: Alat manajemen paket PHP untuk mengelola dependensi proyek.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+========================================================================
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Dibuat Oleh: Adnisa Sabina
+Pada Tanggal: 20 Desember 2023
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Sistem Pendaftaran Beasiswa
 
-## Learning Laravel
+Sistem ini dibuat menggunakan Laravel dengan struktur folder berikut:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Folder app: Berisi file kelas PHP yang mendefinisikan model, controller, dan middleware aplikasi.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Folder bootstrap: Berisi file yang memuat kerangka kerja dan mengkonfigurasi autoloading.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Folder config: Berisi file yang menentukan konfigurasi aplikasi, seperti database, mail, cache, dll.
 
-## Laravel Sponsors
+Folder public: Berisi file yang dapat diakses secara publik, seperti index.php, favicon, css, js, dll.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Folder resources: Berisi file yang digunakan sebagai sumber daya untuk membangun tampilan aplikasi, seperti blade, lang, sass, dll.
 
-### Premium Partners
+Folder layouts pada resource : berisi file blade untuk membuat component yang reusable
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Folder routes: Berisi file yang mendefinisikan rute aplikasi, seperti web.php, api.php, dll.
 
-## Contributing
+Folder tests: Berisi file yang digunakan untuk menguji aplikasi, seperti unit test, feature test, dll.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Folder vendor: Berisi file yang dihasilkan oleh Composer, yang merupakan manajer dependensi PHP.
 
-## Code of Conduct
+Folder .git: Berisi file yang digunakan oleh Git, yang merupakan sistem kontrol versi.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+File .env.example: File contoh yang berisi variabel lingkungan aplikasi, yang harus disalin ke file .env dan disesuaikan.
 
-## Security Vulnerabilities
+File .gitattributes: File yang menentukan atribut untuk jalur proyek dalam Git.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+File .gitignore: File yang menentukan file atau folder yang harus diabaikan oleh Git.
 
-## License
+File composer.json: File yang menentukan informasi dan dependensi proyek PHP.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+File package.json: File yang menentukan informasi dan dependensi proyek Node.js.
+
+File phpunit.xml: File yang menentukan konfigurasi untuk pengujian aplikasi dengan PHPUnit.
+
+File README.md: File ini, yang berisi penjelasan tentang proyek.
+
+File app.config.js: File yang menentukan konfigurasi untuk aplikasi, seperti nama, versi, dll
+
+library dan Framework yang dipasang :
+-Bootstrap
+-Jquery
+-Datatables
+-Chartjs
