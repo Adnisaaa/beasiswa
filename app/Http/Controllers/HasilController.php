@@ -13,7 +13,7 @@ class HasilController extends Controller
     * Final state: Menampilkan halaman hasil dengan data pendaftaran, jumlah akademik, jumlah non-akademik, dan judul
     * Author: Adnisa Sabina
     * Version: 1.0
-    * Date: [tanggal]
+    * Date: 20-12-2023
     * 
     */
     public function index()

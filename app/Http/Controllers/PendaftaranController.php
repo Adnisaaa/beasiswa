@@ -62,7 +62,7 @@ class PendaftaranController extends Controller
      * Final state: Data pendaftaran beasiswa disimpan ke dalam database
      * Author: Adnisa Sabina
      * Version: 1.0
-     * Date: [tanggal]
+     * Date: 20-12-2023
      * 
      */
     public function store(Request $request)
@@ -84,7 +84,6 @@ class PendaftaranController extends Controller
             // Jika validasi gagal, redirect kembali ke halaman pendaftaran dengan error
             return redirect()->route('pendaftaran.index')->withErrors($validator, 'pendaftaran');
         }
-
 
         // Memproses upload berkas
         $path = 'Gambar_Berkas';
